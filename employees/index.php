@@ -2577,18 +2577,14 @@ foreach ( $employee as $category ) {
 
 
 	if ( $category['designation'] == 'manager' ) {
-		$manager[$category['emp_no']] = $category ;
+		$manager[$category['emp_no']] = $category;
+	} elseif ( $category['designation'] == 'programmer' ) {
+		$prog[$category['emp_no']] = $category;
+	} elseif ( $category['designation'] == 'tester' ) {
+		$tester[$category['emp_no']] = $category;
+	} elseif ( $category['designation'] == 'designer' ) {
+		$designer[$category['emp_no']] = $category;
 	}
-	elseif ( $category['designation'] == 'programmer' ) {
-		$prog[$category['emp_no']] = $category ;
-	}
-	elseif ( $category['designation'] == 'tester' ) {
-		$tester[$category['emp_no']] = $category ;
-	}
-	elseif ( $category['designation'] == 'designer' ) {
-		$designer[$category['emp_no']] = $category ;
-	}
-
 }
 
 $section = array(
@@ -2598,7 +2594,7 @@ $section = array(
 	'designers' => $designer
 );
 
-print_r($section);
+print_r( $section );
 
 
 //echo count( $employee );
