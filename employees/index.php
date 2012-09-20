@@ -1,6 +1,7 @@
 <?php
 
 $employee = array(
+<<<<<<< HEAD
 	'Abi' => array(
 		'emp_no' => 0001,
 		'firstname' => 'abi',
@@ -2502,6 +2503,10 @@ $employee = array(
 	),
 	'Ducen' => array(
 		'emp_no' => 236099,
+=======
+	'shawn' => array(
+		'emp_no' => 0001,
+>>>>>>> a2b2bb72724e910293e9d30023b2ce238d67914f
 		'firstname' => 'Shawn',
 		'surname' => 'wrangler',
 		'dob' => array(
@@ -2517,6 +2522,7 @@ $employee = array(
 			'state' => 'New Delhi',
 			'country' => 'India',
 			'postal' => 116375
+<<<<<<< HEAD
 		),
 		'designation' => 'tester',
 		'salary' => '10k'
@@ -2546,4 +2552,10 @@ $employee = array(
 
 //echo count( $employee );
 
+=======
+		)
+	)
+);
+
+>>>>>>> a2b2bb72724e910293e9d30023b2ce238d67914f
 print_r( $employee );
