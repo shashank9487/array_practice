@@ -2573,20 +2573,22 @@ $prog = array( );
 $tester = array( );
 $designer = array( );
 
-foreach ( $employee as $name => $category ) {
+foreach ( $employee as $category ) {
 
 
-	if ( $category['designation'] == 'manager' )
-		$manager[] = array( $name => $category );
+	if ( $category['designation'] == 'manager' ) {
+		$manager[$category['emp_no']] = $category ;
+	}
+	elseif ( $category['designation'] == 'programmer' ) {
+		$prog[$category['emp_no']] = $category ;
+	}
+	elseif ( $category['designation'] == 'tester' ) {
+		$tester[$category['emp_no']] = $category ;
+	}
+	elseif ( $category['designation'] == 'designer' ) {
+		$designer[$category['emp_no']] = $category ;
+	}
 
-	if ( $category['designation'] == 'programmer' )
-		$prog[] = array( $name => $category );
-
-	if ( $category['designation'] == 'tester' )
-		$tester[] = array( $name => $category );
-
-	if ( $category['designation'] == 'designer' )
-		$designer[] = array( $name => $category );
 }
 
 $section = array(
