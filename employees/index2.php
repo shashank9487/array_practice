@@ -3,8 +3,6 @@
 $first = array( "Neo", "Morpheus", "Trinity", "Cypher", "Tank" );
 $sur = array( "art", "mac", "john", "vipe", "bull" );
 $desig = array( "manager", "tester", "programmer", "designer" );
-$age = array( 20, 25, 30, 40, 44, 50, 66, 65, 70, 80 );
-
 
 $age = range( 20, 80 );
 $date = range( (date( "d" ) - 20 ), ((date( "d" ) - 20) + 31 ) );
